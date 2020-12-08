@@ -1,0 +1,44 @@
+/* Header */
+
+.header {
+  display: flex;
+  background-color: black;
+  width: 100vw;
+  height: 15vh;
+  align-items: center;
+}
+
+.h1 {
+  color: white;
+  width: 11%;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-size: 2rem;
+}
+
+.nombreUsuario {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}  
+
+.nombreUsuario h4 {
+  width: 100%;
+  font-family: sans-serif;
+  text-align: right;
+}  
+
+.avatar {
+  width: 5rem;
+  height: 100%;
+  overflow-y: hidden;
+  margin-right: 1rem;
+}  
+
+.avatar img {
+  height: 100%;
+  padding: 0.7rem 1.2rem;
+}
