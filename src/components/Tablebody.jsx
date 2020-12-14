@@ -2,6 +2,7 @@ import React from 'react';
 import Deletebutton from './Deletebutton'
 import {generate as id} from "shortid";
 
+
 const Tablebody = ({datos}) => {
   return (
     <tbody className="tbody">
