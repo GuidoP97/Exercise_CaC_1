@@ -1,7 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-src-Ejercicio1y2
-src-ejerciciodehook
+ejercicio_hooks_react
 
 # dependencies
 /node_modules

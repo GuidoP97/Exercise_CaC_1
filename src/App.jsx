@@ -1,17 +1,25 @@
-import React from 'react'
-import './index.css'
-import Header from './components/Header'
-import Section from './components/Section'
-import Footer from './components/Footer'
+import React, { Component } from 'react'
+import Form from './components/Form'
+import List from './components/List'
+// import styled, {createGlobalStyle} from 'styled-components' 
 
-const App = () => {
-  return (
-    <>
-      <Header/>
-      <Section/>
-      <Footer/>
-    </>
-  )
+
+class App extends Component {
+
+  state = {}
+
+ handleRecibir = (datos) => {
+    this.setState({datos}) 
+    return this.state
+ }
+
+  render() {
+    return (
+            <>
+              <Form handleRecibir={this.handleRecibir}/>
+              <List data={[this.state]} />
+            </>)
+}
 }
 
 export default App
