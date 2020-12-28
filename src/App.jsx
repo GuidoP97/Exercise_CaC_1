@@ -8,16 +8,22 @@ class App extends Component {
 
   state = {}
 
+  datosArr = []
+
  handleRecibir = (datos) => {
-    this.setState({datos}) 
-    return this.state
+    this.setState({datos})
+    if(datos !== ''){
+      this.datosArr.push(this.state.datos)
+    }
+    console.log(this.datosArr);
+    return this.datosArr
  }
 
   render() {
     return (
             <>
               <Form handleRecibir={this.handleRecibir}/>
-              <List data={[this.state]} />
+              <List data={this.datosArr} />
             </>)
 }
 }

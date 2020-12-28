@@ -22,12 +22,12 @@ const List = ({data}) => (
   <>
     <Container>
       {
-        data.map(({datos})=>(
-          <Row>
-            <Cell>{datos.nombre} {datos.apellido}</Cell>
-            <Cell>Del</Cell>
-          </Row>
-        ))
+        // data.map((datosArr)=>(
+        //   <Row>
+        //     <Cell>{datosArr.nombre} {datosArr.apellido}</Cell>
+        //     <Cell>Del</Cell>
+        //   </Row>
+        // ))
       }
     </Container>
   </>
